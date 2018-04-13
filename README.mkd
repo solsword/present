@@ -8,4 +8,6 @@ The Makefile is only a single line, so you can do without `make` if needed (just
 
 Edit `pres.mkd` and use `make` to build `pres.html`. Be aware that things like linked Youtube videos will only be accessible if you have an internet connection *while presenting*.
 
+Edit `css/colors.css` and `css/fonts.css` to control colors & fonts.
+
 Feel free to copy/modify/distribute under the MIT license.

@@ -1,0 +1,75 @@
+/* Serif */
+html {
+  --font_family: "NotoSerif", "Palatino", "宋体", "SimSun", "冬青黑体", "Hiragino Mincho ProN W6", serif;
+  --font_size: 22pt;
+  --section_size: 32pt;
+  --title_size: 28pt;
+}
+/* */
+
+/* Sans-serif * /
+html {
+  --font_family: "NotoSans", "Helvetica", "黑体", "SimHei", "冬青黑体", "Hiragino Sans W6", sans-serif;
+  --font_size: 22pt;
+  --section_size: 32pt;
+  --title_size: 28pt;
+}
+/* */
+
+/* Custom font declarations */
+
+@font-face {
+    font-family: 'NotoSerif';
+    src: url('font/notoserif_regular/NotoSerif-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSerifBold';
+    src: url('font/notoserif_bold/NotoSerif-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSerifItalic';
+    src: url('font/notoserif_italic/NotoSerif-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSerifBoldItalic';
+    src: url('font/notoserif_bolditalic/NotoSerif-BoldItalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url('font/notosans_regular/NotoSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansBold';
+    src: url('font/notosans_bold/NotoSans-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansItalic';
+    src: url('font/notosans_italic/NotoSans-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansBoldItalic';
+    src: url('font/notosans_bolditalic/NotoSans-BoldItalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

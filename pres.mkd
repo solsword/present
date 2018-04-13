@@ -145,7 +145,7 @@ function r_interleave(inner, size) {
 
 ## Block-quoted custom text
 
-<div style="width: 1120px; font-size: 26pt; text-align: left;">
+<div style="width: 1120px; font-size: 24pt; text-align: left;">
 > As you continue your journey, a dragon swoops down from the skies, scales
 > glinting in the sun. It is threatening you. What do you do?
 >

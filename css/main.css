@@ -1,60 +1,9 @@
-/*
- * Color themes
- */
-
-/* Peaches & Grapes * /
-html {
-  --bg_top: #fff0e0;
-  --bg_bot: #ffc8e8;
-  --main_text: #403;
-  --faded_text: #885080;
-  --selected_text: #e0e0ff;
-  --selected_bg: #003;
-  --question_text: #c3a;
-  --link_text: #a06;
-  --link_hover: #d2a;
-  --addendum_text: #e42;
-  --addendum_link: #f84;
-  --addendum_link_hover: #d62;
-}
-/* */
-
-/* Grass in the Sun * /
-html {
-  --bg_top: #ffffe0;
-  --bg_bot: #e8ffc8;
-  --main_text: #382000;
-  --faded_text: #986;
-  --selected_text: #ffffe0;
-  --selected_bg: #320;
-  --question_text: #ca3;
-  --link_text: #a60;
-  --link_hover: #da2;
-  --addendum_text: #e42;
-  --addendum_link: #f84;
-  --addendum_link_hover: #d62;
-}
-/* */
-
-/* Emerald */
-html {
-  --bg_top: #e0ffff;
-  --bg_bot: #b8ffe8;
-  --main_text: #003820;
-  --faded_text: #698;
-  --selected_text: #e0fff0;
-  --selected_bg: #032;
-  --question_text: #2b9;
-  --link_text: #0a6;
-  --link_hover: #2da;
-  --addendum_text: #e42;
-  --addendum_link: #f84;
-  --addendum_link_hover: #d62;
-}
-/* */
-
 .reveal h1 {
-  font-size: 32pt;
+  font-size: var(--section_size);
+}
+
+.reveal h2 {
+  font-size: var(--title_size);
 }
 
 .reveal pre, .reveal code {
@@ -86,11 +35,11 @@ html {
   color: var(--addendum_text);
 }
 
-.reveal .addendum a {
+.reveal .addendum a:link {
   color: var(--addendum_link) !important;
 }
 
-.reveal .addendum a:hover {
+.reveal .addendum a:link:hover {
   color: var(--addendum_link_hover) !important;
 }
 

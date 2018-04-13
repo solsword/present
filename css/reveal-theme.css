@@ -7,34 +7,6 @@
  */
 
 
-@font-face {
-    font-family: 'NotoSerif';
-    src: url('font/notoserif_regular/NotoSerif-Regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NotoSerifBold';
-    src: url('font/notoserif_bold/NotoSerif-Bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NotoSerifItalic';
-    src: url('font/notoserif_italic/NotoSerif-Italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NotoSerifBoldItalic';
-    src: url('font/notoserif_bolditalic/NotoSerif-BoldItalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -45,8 +17,8 @@ body {
 }
 
 .reveal {
-  font-family: "NotoSerif", "Helvetica", "黑体", SimHei, "冬青黑体", "Hiragino Sans GB", sans-serif;
-  font-size: 36px;
+  font-family: var(--font_family);
+  font-size: var(--font_size);
   font-weight: normal;
   color: var(--main_text);
 }
@@ -74,7 +46,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: var(--main_text);
-  font-family: "NotoSerif", "Helvetica", "黑体", SimHei, sans-serif;
+  font-family: var(--font_family);
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -166,10 +138,17 @@ body {
   position: relative;
   width: 70%;
   margin: 20px auto;
-  padding: 5px;
+  padding: 8pt 12pt 8pt 12pt;
   font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0pt 0pt 2pt rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child {
+  margin-top: 0pt}
+
+.reveal blockquote p:last-child {
+  margin-bottom: 0pt}
 
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
@@ -194,6 +173,10 @@ body {
 
 .reveal code {
   font-family: monospace; }
+
+.reveal code a {
+  color: #000;
+}
 
 .reveal pre code {
   display: block;
@@ -246,15 +229,13 @@ body {
 /*********************************************
  * LINKS
  *********************************************/
-.reveal a {
+.reveal a:link, .reveal a:visited {
   line-height: 1.3em;
   color: var(--link_text);
   text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  transition: color .15s ease; }
+}
 
-.reveal a:hover {
+.reveal a:link:hover, .reveal a:visited:hover {
   color: var(--link_hover);
   text-shadow: none;
   border: none; }
