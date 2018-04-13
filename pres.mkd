@@ -12,6 +12,17 @@ Slide contents
 
 [Link text](https://www.example.com)
 
+Press 's' to show speaker notes.
+
+::: notes
+
+Speaker notes for the first slide.
+
+- Markdown
+- is enabled here too
+
+:::
+
 ## Colors
 
 - Normal
@@ -23,6 +34,12 @@ Slide contents
 - Normal
 - [Addendum [with link](https://www.example.com)]{.addendum}
 
+
+## $$\KaTeX$$
+
+You can use (limited) LaTeX for formulae and such:
+
+$$ a = \sum_{i=0}^{10} \frac{\log i^x + 3}{17} $$
 
 ## Slide with Columns
 
@@ -67,12 +84,17 @@ A slide without a title
 
 ---
 
-<video class="ipad-plate-content" poster="http://www.earthprimer.com/video/rainshadow.png" loop="true" autoplay="true" width="640" height="480" muted="true" preload="auto">
-  <source src="http://www.earthprimer.com/video/rainshadow.mp4" type="video/mp4">
-  <source src="http://www.earthprimer.com/video/rainshadow.webm" type="video/webm">
+<video id="video" controls="" poster="http://media.w3.org/2010/05/video/poster.png" loop="true" autoplay="true" width="640" height="480" muted="true" preload="auto">
+  <source id="webm" src="http://media.w3.org/2010/05/video/movie_300.webm" type="video/webm"><source id="mp4" src="http://media.w3.org/2010/05/video/movie_300.mp4" type="video/mp4">
+  
+  <source id="ogv" src="https://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg">
+
+  <p>Your user agent does not support the HTML5 Video element.</p>
 </video>
 
 HTML 5 video embedding (again you'll need internet)
+
+[Set to autoplay muted w/ controls visible.]{.attribution}
 
 ---
 

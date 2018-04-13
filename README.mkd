@@ -4,7 +4,7 @@ Template for a [`reveal.js`](https://github.com/hakimel/reveal.js) presentation 
 
 `reveal.js` is included as a submodule, but `pandoc` is a dependency best installed using your favorite package manager (see the link above).
 
-The Makefile is only as single line, so you can do without `make` if needed.
+The Makefile is only a single line, so you can do without `make` if needed (just paste that line into your terminal).
 
 Edit `pres.mkd` and use `make` to build `pres.html`. Be aware that things like linked Youtube videos will only be accessible if you have an internet connection *while presenting*.
 
