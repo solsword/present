@@ -1,0 +1,161 @@
+% Presentation Title
+% Author
+% Date
+
+# Category
+
+## Slide Title
+
+Slide contents
+
+![Alt text](image.png){width=90%}<span></span>
+
+[Link text](https://www.example.com)
+
+## Colors
+
+- Normal
+- [Faded]{.faded}
+- Normal
+- [Link](https://www.example.com)
+- Normal
+- [Question for the audience?]{.question}
+- Normal
+- [Addendum [with link](https://www.example.com)]{.addendum}
+
+
+## Slide with Columns
+
+<div class="columns">
+
+<div class="column" style="width:50%">
+- Bulleted list
+    1. Numbered items
+    2. Number 2
+    3. Number 3
+- Another bulleted item
+    1. More
+    1. Numbered
+    1. Items
+</div>
+<div class="column" style="width:50%">
+- More
+    * List
+    * Examples
+- Here
+    <ul>
+    <li>HTML works too</li>
+    <li class="question">Alt text color for questions to audience</li>
+    <li class="fragment">This item will be shown on slide advance</li>
+    </ul>
+</div>
+</div>
+
+---
+
+<iframe width="1031" height="580" src="https://www.youtube.com/embed/3SQYWsfL_Fo?list=PL5QArmMxa_IF4KkqfzJrQvEDFRm_5olsj" frameborder="0" allowfullscreen></iframe>
+
+<p class="attribution">
+A Youtube video (you'll need internet to play it!). This text is pretty small.
+</p>
+
+# Another Section
+
+---
+
+A slide without a title
+
+---
+
+<video class="ipad-plate-content" poster="http://www.earthprimer.com/video/rainshadow.png" loop="true" autoplay="true" width="640" height="480" muted="true" preload="auto">
+  <source src="http://www.earthprimer.com/video/rainshadow.mp4" type="video/mp4">
+  <source src="http://www.earthprimer.com/video/rainshadow.webm" type="video/webm">
+</video>
+
+HTML 5 video embedding (again you'll need internet)
+
+---
+
+## Questions
+
+Another way to get items to appear one-by-one (and another way to add CSS
+classes):
+
+> - [A question?]{.question}
+> - [Another question?]{.question}
+
+## Code
+
+```javascript
+// Applies a circular offset
+function spin(inner, size, seed) {
+  return (inner + seed) % size;
+}
+
+// Inverse spin
+function r_spin(inner, size, seed) {
+  return (inner - seed) % size;
+}
+```
+
+## Styled code
+
+```{.javascript style="font-size: 24pt;"}
+// Interleaves items by folding the top half into the bottom half
+function interleave(inner, size) {
+  var half = Math.floor((size+1)/2);
+  if (inner < half) {
+    return inner * 2;
+  } else {
+    var from_end = (size - 1 - inner);
+    return (from_end * 2) + 1;
+  }
+}
+// Inverse interleave
+function r_interleave(inner, size) {
+  if (is_odd(inner)) {
+    return size - 1 - Math.floor(inner/2);
+  } else {
+    return Math.floor(inner/2);
+  }
+}
+```
+
+## Block-quoted custom text
+
+<div style="width: 1120px; font-size: 26pt; text-align: left;">
+> As you continue your journey, a dragon swoops down from the skies, scales
+> glinting in the sun. It is threatening you. What do you do?
+>
+> 1. You try to flee from the dragon<br/>
+>    (You are missing skill: wilderness lore. It has skill: wilderness lore).
+> 2. You attack the dragon<br/>
+>    (You are missing skill: fighting. It has skill: fighting. It has some claws).
+> 3. You attempt to pacify the dragon with music<br/>
+>   (You are missing skill: musician).
+</div>
+
+## Faded text
+
+- Generative Algorithms:
+    * Constraint-solver-based generation
+    * On-demand & reversible algorithms
+    * [Quantifying & optimizing existing algorithms]{.faded}
+- Applications:
+    * Game design (indefinite worlds)
+    * Interactive narrative (player psychology/interactive poetics)
+    * [Education (models of student capabilities/interests)]{.faded}
+
+# Extras
+
+## Image w/ custom style
+
+![Alt text](image.svg){style="width: 43%; margin-top: -18pt;"}<span></span>
+
+## {data-transition="slide-in none-out"}
+
+These two slides...
+
+## {data-transition="none-in slide-out"}
+
+...transition directly instead of sliding.
