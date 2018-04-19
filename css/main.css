@@ -55,6 +55,10 @@
   color: var(--faded_text);
 }
 
+.reveal .large {
+  font-size: 160%;
+}
+
 .reveal .small {
   font-size: 80%;
 }
@@ -147,3 +151,34 @@
   max-width: 55%;
   padding: 1%;
 }
+
+.reveal div p:first-child {
+  margin-top: 0px;
+}
+
+.reveal div p:last-child {
+  margin-bottom: 0px;
+}
+
+.reveal ol li:first-child, .reveal ul li:first-child {
+  margin-top: 0px;
+}
+
+.reveal ol li:last-child, .reveal ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.reveal li {
+  margin: 22pt 0;
+}
+
+.reveal img.pixels {
+  image-rendering: optimizeSpeed;            /* STOP SMOOTHING, GIVE ME SPEED */
+  image-rendering: -moz-crisp-edges;         /* Firefox                       */
+  image-rendering: -o-crisp-edges;           /* Opera                         */
+  image-rendering: -webkit-optimize-contrast;/* Chrome (and eventually Safari)*/
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;        /* CSS3 Proposed                 */
+  -ms-interpolation-mode: nearest-neighbor;  /* IE8+                          */
+}
+
