@@ -10,3 +10,10 @@ pres.pdf: pres.html
 
 pres-bundled.html: pres.mkd Makefile bits/*
 	pandoc pres.mkd --self-contained $(POPTS) --output=pres-bundled.html
+
+.PHONY: clean
+clean:
+	rm pres.html pres.pdf pres-bundled.html
+
+.PHONY: all
+all: pres.html pres.pdf pres-bundled.html
