@@ -2,10 +2,23 @@
  * Color themes
  */
 
+/* Background gradient shape control */
+html {
+  /* Linear with lighter color on top * /
+  --bg_shape: linear-gradient(to top, var(--bg_dark), var(--bg_light));
+  /* Linear with lighter color on bottom * /
+  --bg_shape: linear-gradient(to bottom, var(--bg_dark), var(--bg_light));
+  /* Radial with lighter color in the middle */
+  --bg_shape: radial-gradient(circle at center, var(--bg_light),var(--bg_dark));
+  /* Radial with lighter color at the edges * /
+  --bg_shape: radial-gradient(circle at center, var(--bg_dark),var(--bg_light));
+  /* */
+}
+
 /* Peaches & Grapes * /
 html {
-  --bg_top: #fff0e0;
-  --bg_bot: #ffc8e8;
+  --bg_light: #fff0e0;
+  --bg_dark: #ffc8e8;
   --main_text: #403;
   --faded_text: #885080;
   --selected_text: #e0e0ff;
@@ -21,8 +34,8 @@ html {
 
 /* Grass in the Sun * /
 html {
-  --bg_top: #ffffe0;
-  --bg_bot: #e0ffc0;
+  --bg_light: #ffffe0;
+  --bg_dark: #e0ffc0;
   --main_text: #382000;
   --faded_text: #986;
   --selected_text: #ffffe0;
@@ -36,10 +49,10 @@ html {
 }
 /* */
 
-/* Seafoam */
+/* Seafoam * /
 html {
-  --bg_top: #e0ffff;
-  --bg_bot: #b8ffe8;
+  --bg_light: #e0ffff;
+  --bg_dark: #b8ffe8;
   --main_text: #003820;
   --faded_text: #698;
   --selected_text: #e0fff0;
@@ -53,3 +66,106 @@ html {
 }
 /* */
 
+/* Aqua (best with radial shapes) */
+html {
+  --bg_light: #bef;
+  --bg_dark: #8af;
+  --main_text: #014;
+  --faded_text: #569;
+  --selected_text: #ffe;
+  --selected_bg: #014;
+  --question_text: #16a;
+  --link_text: #038;
+  --link_hover: #2ae;
+  --addendum_text: #e42;
+  --addendum_link: #f84;
+  --addendum_link_hover: #d62;
+}
+/* */
+
+/* Sunset * /
+html {
+  --bg_light: #f0b8ff;
+  --bg_dark: #a0a0ff;
+  --main_text: #204;
+  --faded_text: #759;
+  --selected_text: #ffe0ff;
+  --selected_bg: #204;
+  --question_text: #93b;
+  --link_text: #60a;
+  --link_hover: #a2d;
+  --addendum_text: #e42;
+  --addendum_link: #f84;
+  --addendum_link_hover: #d62;
+}
+/* */
+
+/* Benthic (dark background with bright text; Aqua in print) * /
+@media print {
+  html {
+    --bg_light: #bef;
+    --bg_dark: #8af;
+    --main_text: #014;
+    --faded_text: #569;
+    --selected_text: #ffe;
+    --selected_bg: #014;
+    --question_text: #16a;
+    --link_text: #038;
+    --link_hover: #2ae;
+    --addendum_text: #e42;
+    --addendum_link: #f84;
+    --addendum_link_hover: #d62;
+  }
+}
+@media screen {
+  html {
+    --bg_light: #126;
+    --bg_dark: #002;
+    --main_text: #ffe;
+    --faded_text: #aa9;
+    --selected_text: #248;
+    --selected_bg: #ffe;
+    --question_text: #7ee;
+    --link_text: #eb6;
+    --link_hover: #f90;
+    --addendum_text: #e42;
+    --addendum_link: #f84;
+    --addendum_link_hover: #d62;
+  }
+}
+/* */
+
+/* Autumn (dark background with bright text; Grass in the Sun in print) * /
+@media print {
+  html {
+    --bg_light: #ffffe0;
+    --bg_dark: #e0ffc0;
+    --main_text: #382000;
+    --faded_text: #986;
+    --selected_text: #ffffe0;
+    --selected_bg: #320;
+    --question_text: #ca3;
+    --link_text: #a60;
+    --link_hover: #da2;
+    --addendum_text: #e42;
+    --addendum_link: #f84;
+    --addendum_link_hover: #d62;
+  }
+}
+@media screen {
+  html {
+    --bg_light: #b60;
+    --bg_dark: #600;
+    --main_text: #fff;
+    --faded_text: #aaa;
+    --selected_text: #000;
+    --selected_bg: #fff;
+    --question_text: #ed7;
+    --link_text: #eb6;
+    --link_hover: #f90;
+    --addendum_text: #e42;
+    --addendum_link: #f84;
+    --addendum_link_hover: #d62;
+  }
+}
+/* */

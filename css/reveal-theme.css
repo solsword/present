@@ -13,7 +13,8 @@
 body {
   background: var(--bg_top);
   background-color: var(--bg_top);
-  background: linear-gradient(to bottom, var(--bg_top), var(--bg_bot));
+  /*background: linear-gradient(to bottom, var(--bg_top), var(--bg_bot));*/
+  background: var(--bg_shape);
 }
 
 .reveal {

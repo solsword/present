@@ -35,11 +35,11 @@
   color: var(--addendum_text);
 }
 
-.reveal .addendum a:link {
+.reveal .addendum a:link, .reveal .addendum a:visited {
   color: var(--addendum_link) !important;
 }
 
-.reveal .addendum a:link:hover {
+.reveal .addendum a:link:hover, .reveal .addendum a:visited:hover {
   color: var(--addendum_link_hover) !important;
 }
 

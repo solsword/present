@@ -1,6 +1,9 @@
-% Presentation Title
-% Author
-% Date
+---
+title: Presentation Title
+subtitle: "*Subtitle*"
+author: Author 1 and **Author 2**
+date: Date
+---
 
 # Category
 
