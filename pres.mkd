@@ -177,6 +177,24 @@ function r_interleave(inner, size) {
 
 ![Alt text](image.svg){style="width: 43%; margin-top: -18pt;"}<span></span>
 
+## Content swap using fragments
+
+<span class="fragment fade-out" data-fragment-index="1">
+This will fade out...
+</span>
+<span class="fragment fade-in" data-fragment-index="1">
+...at the same time that this fades in.
+</span>
+
+<div style="width: 50%; margin: auto;">
+<div class="fragment fade-out" style="position:absolute;" data-fragment-index="2">
+You can even put multiple fragments...
+</div>
+<div class="fragment fade-in" style="position:absolute;" data-fragment-index="2">
+...on top of each other like this.
+</div>
+</div>
+
 ## {data-transition="slide-in none-out"}
 
 These two slides...
